@@ -226,7 +226,7 @@
 }
 /*Projects*/
 #my_projects {
-  background-image: url(/styles/images/landing1.jpg);
+  background-color: #fff;
   background-attachment: fixed;
   display: grid;
   place-items: left;
@@ -235,8 +235,8 @@
 }
 #my_projects h1 {
   font-family: "Trebuchet MS", sans-serif;
-  color: white;
-  font-size: 2em;
+  color: black;
+  font-size: 3em;
   letter-spacing: -1px;
   margin-bottom: 15px;
   padding: 10px;
@@ -247,12 +247,11 @@
   height: 40%;
   margin: 1%;
   margin-left: 10%;
-  background: rgba(18, 10, 10, 0.65);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-
+  border-radius: 8px;
+  background: #edebeb;
+  box-shadow: 36px 36px 71px #dcdbdb, -36px -36px 71px #fefbfb;
   border: 1px solid rgba(255, 255, 255, 0.18);
+
   min-width: 300px;
   display: flex;
   flex-direction: row;
@@ -287,5 +286,43 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: black;
+}
+/*testimonials*/
+#testimonials {
+  max-width: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
+  background-image: url(/styles/images/testemonial.jpg);
+  background: cover;
+}
+.slide {
+  display: flex;
+  justify-content: space-around;
+  padding: 150px;
+  border-radius: 8px;
+  background: rgba(10, 8, 10, 0.85);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-top: 5%;
+}
+.info {
+  padding: 20px;
+  width: 50vw;
+}
+.info h1 {
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 10px;
+  align-content: center;
+}
+.info h2 {
+  color: red;
+  margin-bottom: 10px;
+}
+.info q {
   color: #fff;
 }
