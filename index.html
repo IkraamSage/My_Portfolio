@@ -5,22 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ikraam's Portfolio</title>
-    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!--External links-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/85677d8629.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!--Landing & Navbar-->
     <div class="landing">
       <nav id="Navbar">
         <ul id="menu">
-          <li><a href="#" class="link">About </a></li>
-          <li><a href="#" class="link">Education & Work</a></li>
-          <li><a href="#" class="link">Skills</a></li>
-          <li><a href="#" class="link">Projects</a></li>
-          <li><a href="#" class="link">Testemonials</a></li>
+          <li><a href="#info" class="link">Home</a></li>
+          <li><a href="#about-page" class="link">About </a></li>
+          <li><a href="#education" class="link">Education & Work</a></li>
+          <li><a href="#skills" class="link">Skills</a></li>
+          <li><a href="#my_projects" class="link">Projects</a></li>
+          <li><a href="#" class="link">Testimonials</a></li>
           <li><a href="#" class="link">Contact</a></li>
         </ul>
       </nav>
-      <div class="info">
+      <div id="info">
         <div>
           <h1>IKRAAM SAGE</h1>
           <h2>FULLSTACK DEVELOPER</h2>
@@ -47,10 +66,10 @@
       </div>
     </div>
     <!--About-->
-    <div class="About-page">
+    <div id="about-page">
       <h1>ABOUT ME</h1>
 
-      <h3>BIO</h3>
+      <h3>BIO:</h3>
       <q
         >I am an introvert who will express myself confidently around those I am
         comfortable with. I have good leadership skills and I know how to stand
@@ -66,5 +85,296 @@
         computers worked and continued to use these in my everyday life.</q
       >
     </div>
+    <!--Education & work-->
+
+    <section id="education">
+      <div class="heading">
+        <h1>EDUCATION AND WORK</h1>
+      </div>
+      <div class="center-line"></div>
+      <!--items-->
+      <div
+        data-aos-duration="1000"
+        data-aos="flip-left"
+        class="education-item item-1"
+      >
+        <h2>Northlink College - <span>Diesel Mechanics</span></h2>
+        <h3>2018-2019</h3>
+        <p>Completed N1 and N2 during 2018 at Northlink College Belville</p>
+      </div>
+      <div
+        data-aos-duration="1000"
+        data-aos="flip-right"
+        class="education-item item-2"
+      >
+        <h2>Northlink College - <span>Diesel Mechanics</span></h2>
+        <h3>2019-2020</h3>
+        <p>
+          Completed N3 and attempted N4 and at the end of 2019 i started my
+          levels at Imperial
+        </p>
+      </div>
+      <div
+        data-aos-duration="1000"
+        data-aos="flip-left"
+        class="education-item item-3"
+      >
+        <h2>
+          Imperial Technical Training Academy - <span>level-1 Diesel</span>
+        </h2>
+        <h3>2020-2021</h3>
+        <p>
+          Completed level-1 and level-2 in Diesel Mechanics at ITTA in March
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="heading-skills">
+        <h1>SKILLS</h1>
+      </div>
+      <div class="icons">
+        <a data-aos="flip-right" data-aos-duration="1000" href="#skills"
+          ><i class="fab fa-html5"></i
+        ></a>
+        <a data-aos="flip-right" data-aos-duration="1000" href="#skills"
+          ><i class="fab fa-css3"></i
+        ></a>
+        <a data-aos="flip-right" data-aos-duration="1000" href="#skills"
+          ><i class="fab fa-python"></i
+        ></a>
+      </div>
+    </section>
+    <!--Projects-->
+    <section id="my_projects">
+      <div>
+        <h1 class="container-heading">My Projects</h1>
+        <!--container-->
+        <div class="container container-1">
+          <div class="card">
+            <img src="/styles/images/form.png" alt="form" />
+            <div class="card-details">
+              <h2 class="card-heading">Glassmorphic Form</h2>
+              <h3 class="subtitle">HTML/CSS</h3>
+              <p class="desccription">
+                Glassmorphic styled form using formspree and glassmorphism.com
+              </p>
+              <!--button-->
+              <div class="card-button">
+                <a
+                  href="https://compassionate-wozniak-479dac.netlify.app"
+                  class="button"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/IkraamSage/Contact-form"
+                  class="button"
+                  target="_blank"
+                  >Github</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/styles/images/timeline.png" alt="" />
+            <div class="card-details">
+              <h2 class="card-heading">Glassmorphic Timeline</h2>
+              <h3 class="subtitle">HTML/CSS</h3>
+              <p class="description">
+                styled with glasspmorphism and lorem picsum
+              </p>
+              <div class="card-button">
+                <a
+                  href="https://mystifying-elion-b1ef80.netlify.app/"
+                  class="button"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/IkraamSage/glassmorphic_timeline"
+                  class="button"
+                  target="_blank"
+                  >Github</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/styles/images/sneaker_site.png" alt="" />
+            <div class="card-details">
+              <h2 class="card-heading">Sneaker site</h2>
+              <h3 class="subtitle">HTML/CSS</h3>
+              <p class="description">styled with css and Javascript aos</p>
+              <div class="card-button">
+                <a
+                  href=" https://fervent-almeida-9d3776.netlify.app"
+                  class="button"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/IkraamSage/sneaker_store"
+                  class="button"
+                  target="_blank"
+                  >Github</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/styles/images/temp.png" alt="" />
+            <div class="card-details">
+              <h2 class="card-heading">Temperature Convertor</h2>
+              <h3 class="subtitle">Python</h3>
+              <p class="description">
+                making a temperature convertor with pycharm ,using tkinter
+              </p>
+              <div class="card-button">
+                <a
+                  href=" https://replit.com/@IkraamSage/Temperature-convertor#main.py"
+                  class="button"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/IkraamSage/temperature_convertor"
+                  class="button"
+                  target="_blank"
+                  >Github</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="/styles/images/testemonial_slider.png"
+              alt="testemonial_slider"
+            />
+            <div class="card-details">
+              <h2 class="card-heading">Testemonial Slider</h2>
+              <h3 class="subtitle">HTML/CSS</h3>
+              <p class="description">
+                slider styled with lorem Picsum and glassmorphism
+              </p>
+              <div class="card-button">
+                <a
+                  href="https://condescending-sinoussi-a81cc5.netlify.app/"
+                  class="button"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/IkraamSage/testimonial_slider"
+                  class="button"
+                  target="_blank"
+                  >Github</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Testemonial slider-->
+    <section>
+      <div class="owl-carousel">
+        <div class="slide slide-1">
+          <div class="info">
+            <h1>Godwin Dzvapatsva</h1>
+            <h2>Head of Curriculum and Learning</h2>
+            <q
+              >Ikraam always succeeds in explaining ideas clearly. He also has
+              the ability to listen carefully to what others are saying, to
+              understand and then to respond appropriately.
+            </q>
+          </div>
+        </div>
+        <div class="slide slide-2">
+          <img class="img" src="./images/Naeemah.jpg" alt="Naeemah picture" />
+          <div class="info">
+            <h1>Naeemah Davis</h1>
+            <h2>Peer</h2>
+            <q
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              deleniti tenetur sed, maiores voluptas delectus. Autem a, fuga
+              minus asperiores quaerat maxime architecto quasi adipisci? Neque
+              omnis doloremque nulla maiores!</q
+            >
+          </div>
+        </div>
+        <div class="slide slide-3">
+          <img class="img" src="./images/Devin.jpg" alt="Devin picture" />
+          <div class="info">
+            <h1>Thapelo Tsostetsi</h1>
+            <h2>Manager</h2>
+            <q
+              >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
+              iste commodi ipsum quas! Ducimus nihil placeat eaque illum harum.
+              Ipsa soluta voluptatum minima! Harum explicabo alias enim illum at
+              corporis.</q
+            >
+          </div>
+        </div>
+        <div class="slide slide-4">
+          <img class="img" src="./images/Aneeqah.jpg" alt="Aneeqah picture" />
+          <div class="info">
+            <h1>Aneeqah Jones</h1>
+            <h2>Peer</h2>
+            <q
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              voluptate quis, laborum ea nobis officia impedit architecto soluta
+              provident quod facere! Asperiores excepturi possimus illum
+              consequuntur inventore expedita optio ducimus?</q
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Scripts here  -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          margin: 50,
+          loop: true,
+          stagePadding: 100,
+          dots: false,
+          autoplay: true,
+          responsive: {
+            0: {
+              margin: 10,
+              stagePadding: 0,
+            },
+            500: {
+              margin: 20,
+              stagePadding: 20,
+            },
+            720: {
+              margin: 50,
+              stagePadding: 100,
+            },
+          },
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
