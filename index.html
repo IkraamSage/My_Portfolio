@@ -28,16 +28,17 @@
   <body>
     <!--Landing & Navbar-->
     <div class="landing">
-      <nav id="Navbar">
-        <ul id="menu">
-          <li><a href="#info" class="link">Home</a></li>
-          <li><a href="#about-page" class="link">About </a></li>
-          <li><a href="#education" class="link">Education & Work</a></li>
-          <li><a href="#skills" class="link">Skills</a></li>
-          <li><a href="#my_projects" class="link">Projects</a></li>
-          <li><a href="#testimonials" class="link">Testimonials</a></li>
-          <li><a href="#contact" class="link">Contact</a></li>
+      <nav>
+        <ul class="menu">
+          <li><a href="#info" class="navbar-link">Home</a></li>
+          <li><a href="#about-page" class="navbar-link">About </a></li>
+          <li><a href="#education" class="navbar-link">Education & Work</a></li>
+          <li><a href="#skills" class="navbar-link">Skills</a></li>
+          <li><a href="#my_projects" class="navbar-link">Projects</a></li>
+          <li><a href="#testimonials" class="navbar-link">Testimonials</a></li>
+          <li><a href="#contact" class="navbar-link">Contact</a></li>
         </ul>
+        <button class="nav" onclick="toggleNav()">Menu</button>
       </nav>
       <div id="info">
         <div>
@@ -150,7 +151,7 @@
       <div>
         <h1 class="container-heading">My Projects</h1>
         <!--container-->
-        <div class="container container-1">
+        <div class="container">
           <div class="card">
             <img src="/styles/images/form.png" alt="form" />
             <div class="card-details">
@@ -360,7 +361,7 @@
           class="contact-input"
           type="tel"
           name="contact_no"
-          placeholder="Contact No"
+          placeholder="Contact No."
           required
         />
         <input
@@ -391,11 +392,6 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      function toggleNav() {
-        document
-          .getElementsByClassName("navbar-links")[0]
-          .classList.toggle("active");
-      }
       $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
           items: 1,
@@ -425,5 +421,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="./scripts.js"></script>
   </body>
 </html>
