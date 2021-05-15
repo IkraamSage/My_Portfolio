@@ -76,7 +76,7 @@
   color: rgb(187, 13, 13);
 }
 #info h4 {
-  color: black;
+  color: white;
   font-family: "Trebuchet MS", sans-serif;
 }
 #info p {
@@ -373,7 +373,7 @@
 #contact-form h4 {
   margin-bottom: 10%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   button.nav {
     display: block;
     position: fixed;
@@ -421,7 +421,7 @@
   }
   .me {
     width: 50vw;
-    height: 40vh;
+    height: 30vh;
   }
   .heading {
     font-size: 2em;
