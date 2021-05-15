@@ -36,7 +36,7 @@
           <li><a href="#skills" class="link">Skills</a></li>
           <li><a href="#my_projects" class="link">Projects</a></li>
           <li><a href="#testimonials" class="link">Testimonials</a></li>
-          <li><a href="#" class="link">Contact</a></li>
+          <li><a href="#contact" class="link">Contact</a></li>
         </ul>
       </nav>
       <div id="info">
@@ -110,7 +110,7 @@
         <h2>Northlink College - <span>Diesel Mechanics</span></h2>
         <h3>2019-2020</h3>
         <p>
-          Completed N3 and attempted N4 and at the end of 2019 i started my
+          Completed N3 and attempted N4 and at the end of 2019.I then started my
           levels at Imperial
         </p>
       </div>
@@ -329,6 +329,56 @@
         </div>
       </div>
     </section>
+    <!--Contact-->
+    <section id="contact">
+      <div class="contact-container">
+        <h3 class="contact-heading">Let's get in touch</h3>
+
+        <div>
+          <h4>Address:</h4>
+          <p class="details">16 Eros Way, Woodlands, Mitchell's Plain, 7785</p>
+          <h4>Phone:</h4>
+          <p class="details">0659291806</p>
+          <h4>Email:</h4>
+          <p class="details">i.sage0007@gmail.com</p>
+        </div>
+      </div>
+      <form
+        id="contact-form"
+        action="https://formspree.io/f/mgerayjv"
+        method="POST"
+      >
+        <h4>or write me a letter</h4>
+        <input
+          class="contact-input"
+          type="text"
+          name="full_name"
+          placeholder="Name"
+          required
+        />
+        <input
+          class="contact-input"
+          type="tel"
+          name="contact_no"
+          placeholder="Contact No"
+          required
+        />
+        <input
+          class="contact-input"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <textarea
+          class="contact-input"
+          name="message"
+          placeholder="Type your message here"
+        ></textarea>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+
     <!-- Scripts here  -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
@@ -341,6 +391,11 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      function toggleNav() {
+        document
+          .getElementsByClassName("navbar-links")[0]
+          .classList.toggle("active");
+      }
       $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
           items: 1,
