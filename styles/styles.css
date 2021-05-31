@@ -39,9 +39,11 @@
 
 /*Landing*/
 .landing {
-  background-image: url(./images/landing4.jpg);
+  background-image: url(./images/landing4.jpg),
+    linear-gradient(rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0.692));
   height: 50%;
   background-size: cover;
+  padding-top: 50px;
 }
 .info-details {
   display: flex;
@@ -214,7 +216,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 120px;
+  font-size: 100px;
   margin-bottom: 10%;
 }
 
@@ -255,12 +257,14 @@
   min-width: 300px;
   display: flex;
   flex-direction: row;
+  font-family: "Trebuchet MS", sans-serif;
 }
 .card img {
   max-width: 40%;
   height: 30vh;
   width: 30vw;
   max-height: 40%;
+  object-fit: cover;
 }
 .button {
   border-radius: 10px;
@@ -292,24 +296,22 @@
 /*testimonials*/
 #testimonials {
   max-width: 100%;
+  width: 100%;
   padding-right: 10%;
   padding-left: 10%;
-  background-image: url(/styles/images/landing1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0.692)),
+    url(/styles/images/landing1.jpg);
   background: cover;
 }
 .slide {
   display: flex;
   justify-content: space-around;
-  padding: 150px;
+  padding: 60px;
   border-radius: 8px;
-  background: rgba(10, 8, 10, 0.85);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+
   margin-top: 5%;
   margin-bottom: 5%;
+  font-family: "Trebuchet MS", sans-serif;
 }
 .info {
   padding: 20px;
@@ -331,7 +333,8 @@
 /*contact*/
 #contact {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-container {
@@ -420,8 +423,7 @@
     flex-direction: column;
   }
   .me {
-    width: 50vw;
-    height: 30vh;
+    display: none;
   }
   .heading {
     font-size: 2em;
