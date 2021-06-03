@@ -17,7 +17,6 @@
   width: 100%;
   position: fixed;
   background: rgba(16, 15, 15, 0.85);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(18.5px);
   -webkit-backdrop-filter: blur(18.5px);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -32,6 +31,11 @@
   padding: 20px;
   font-size: larger;
   text-transform: uppercase;
+  transition: all 0.2s ease-in;
+}
+.navbar-link:hover {
+  color: red;
+  transition: all 0.2s ease-in;
 }
 .landing button {
   display: none;
@@ -39,8 +43,8 @@
 
 /*Landing*/
 .landing {
-  background-image: url(./images/landing4.jpg),
-    linear-gradient(rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0.692));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0.692)),
+    url(./images/landing4.jpg);
   height: 50%;
   background-size: cover;
   padding-top: 50px;
@@ -65,6 +69,7 @@
   font-family: "Trebuchet MS", sans-serif;
   letter-spacing: -2px;
   font-size: 3em;
+  color: white;
 }
 #info h2 {
   font-family: "Trebuchet MS", sans-serif;
@@ -78,7 +83,7 @@
   color: rgb(187, 13, 13);
 }
 #info h4 {
-  color: white;
+  color: gray;
   font-family: "Trebuchet MS", sans-serif;
 }
 #info p {
@@ -128,47 +133,49 @@
 /*timeline*/
 #education {
   display: grid;
-  grid-template-columns: 5% 1fr;
+  grid-template-columns: 1fr 6% 1fr;
   grid-template-rows: repeat(4, 1fr);
   background-image: url(./images/landing3.jpg);
   background-attachment: fixed;
   background-size: cover;
   place-items: center;
-  padding-left: 18%;
+  padding: 0 20%;
 }
 .center-line {
-  width: 30%;
+  width: 20%;
   height: 100%;
   background: rgba(0, 0, 0, 1);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  grid-column: 1;
+  grid-column: 2;
   grid-row: 2 / 5;
 }
 .heading {
   grid-column: 2;
   grid-row: 1;
-  margin-right: 30%;
   font-family: "Trebuchet MS", sans-serif;
   color: #fff;
+  padding-top: 40px;
   font-size: 3em;
   letter-spacing: -2px;
   border-bottom: 3px solid black;
   text-transform: uppercase;
 }
 .item-1 {
-  grid-column: 2;
+  justify-self: end;
+  grid-column: 1;
   grid-row: 2;
 }
 
 .item-2 {
-  grid-column: 2;
+  justify-self: start;
+  grid-column: 3;
   grid-row: 3;
 }
 
 .item-3 {
-  grid-column: 2;
+  justify-self: end;
+  grid-column: 1;
   grid-row: 4;
 }
 
@@ -177,12 +184,10 @@
   padding: 7%;
   margin-bottom: 10%;
   background: rgba(0, 0, 0, 0.65);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  margin-right: 50%;
   font-family: "Trebuchet MS", sans-serif;
   color: #fff;
 }
@@ -243,13 +248,13 @@
   letter-spacing: -1px;
   margin-bottom: 15px;
   padding: 10px;
-  margin-left: 10%;
+  margin-left: 12%;
 }
 .card {
-  width: 80%;
+  width: 77%;
   height: 40%;
   margin: 1%;
-  margin-left: 10%;
+  margin-left: 12%;
   border-radius: 8px;
   background: #edebeb;
   box-shadow: 36px 36px 71px #dcdbdb, -36px -36px 71px #fefbfb;
@@ -333,32 +338,52 @@
 /*contact*/
 #contact {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-left: 18%;
 }
 
 .contact-container {
   display: flex;
   flex-direction: column;
-  padding: 5%;
+  margin-right: 5%;
 }
 #contact-form {
   display: flex;
   flex-direction: column;
-  padding: 5%;
+}
+#contact-form input {
+  padding: 20px;
+}
+#contact-form textarea {
+  padding: 20px;
 }
 .details {
   margin-bottom: 5%;
   font-family: "Trebuchet MS", sans-serif;
 }
 .contact-heading {
-  margin-bottom: 10%;
+  align-self: flex-start;
   font-family: "Trebuchet MS", sans-serif;
   font-size: 2em;
+  padding: 5% 0;
 }
 .contact-input {
   margin-bottom: 10%;
   font-family: "Trebuchet MS", sans-serif;
+  width: 500px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+.message {
+  height: 100px;
+}
+.contact-box {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
 }
 .btn {
   border-radius: 50px;
@@ -367,6 +392,7 @@
   background-color: white;
   color: black;
   padding: 5%;
+  margin-bottom: 50px;
 }
 .btn:hover {
   background-color: red;
@@ -392,6 +418,10 @@
     padding: 10px;
     color: #dcdbdb;
     font-family: sans-serif;
+  }
+  #education {
+    grid-template-columns: 1fr 4%;
+    background-attachment: scroll;
   }
 
   .menu {
@@ -427,15 +457,37 @@
   }
   .heading {
     font-size: 2em;
-    margin-left: 70px;
+    margin-left: 40px;
   }
   #education {
     padding-left: 0%;
   }
   .education-item {
-    margin-left: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .contact-box {
+    display: flex;
+    flex-direction: column;
   }
   #contact {
+    padding: 2%;
+  }
+  .contact-input {
+    width: 360px;
+  }
+
+  .icons {
+    display: flex;
     flex-direction: column;
+  }
+  .item-2 {
+    grid-column: 1;
+  }
+  .heading {
+    grid-column: 1;
+  }
+  .landing {
+    height: 100vh;
   }
 }

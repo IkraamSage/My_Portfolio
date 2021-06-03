@@ -135,15 +135,18 @@
         <h1>SKILLS</h1>
       </div>
       <div class="icons">
-        <a data-aos="flip-right" data-aos-duration="1000" href="#skills"
-          ><i class="fab fa-html5"></i
-        ></a>
-        <a data-aos="flip-right" data-aos-duration="1000" href="#skills"
-          ><i class="fab fa-css3"></i
-        ></a>
-        <a data-aos="flip-right" data-aos-duration="1000" href="#skills"
-          ><i class="fab fa-python"></i
-        ></a>
+        <div class="icon-1" data-aos="flip-right" data-aos-duration="1000">
+          <a href="#skills"><i class="fab fa-html5"></i></a>
+        </div>
+        <div class="icon-2" data-aos="flip-right" data-aos-duration="1000">
+          <a href="#skills"><i class="fab fa-css3"></i></a>
+        </div>
+        <div class="icon-3" data-aos="flip-right" data-aos-duration="1000">
+          <a href="#skills"><i class="fab fa-python"></i></a>
+        </div>
+        <div class="icon-4" data-aos="flip-right" data-aos-duration="1000">
+          <a href="#skills"><i class="fab fa-js"></i></a>
+        </div>
       </div>
     </section>
     <!--Projects-->
@@ -332,52 +335,47 @@
     </section>
     <!--Contact-->
     <section id="contact">
-      <div class="contact-container">
-        <h3 class="contact-heading">Let's get in touch</h3>
-
-        <div>
-          <h4>Address:</h4>
-          <p class="details">16 Eros Way, Woodlands, Mitchell's Plain, 7785</p>
-          <h4>Phone:</h4>
-          <p class="details">0659291806</p>
-          <h4>Email:</h4>
-          <p class="details">i.sage0007@gmail.com</p>
+      <h3 class="contact-heading">Let's get in touch</h3>
+      <div class="contact-box">
+        <div class="contact-container">
+          <div>
+            <h4>Address:</h4>
+            <p class="details">
+              16 Eros Way, Woodlands, Mitchell's Plain, 7785
+            </p>
+            <h4>Phone:</h4>
+            <p class="details">0659291806</p>
+            <h4>Email:</h4>
+            <p class="details">i.sage0007@gmail.com</p>
+          </div>
         </div>
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/mgerayjv"
+          method="POST"
+        >
+          <input
+            class="contact-input"
+            type="text"
+            name="full_name"
+            placeholder="Name"
+            required
+          />
+          <input
+            class="contact-input"
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <textarea
+            class="contact-input message"
+            name="message"
+            placeholder="Type your message here"
+          ></textarea>
+          <button class="btn" type="submit">Send</button>
+        </form>
       </div>
-      <form
-        id="contact-form"
-        action="https://formspree.io/f/mgerayjv"
-        method="POST"
-      >
-        <h4>or write me a letter</h4>
-        <input
-          class="contact-input"
-          type="text"
-          name="full_name"
-          placeholder="Name"
-          required
-        />
-        <input
-          class="contact-input"
-          type="tel"
-          name="contact_no"
-          placeholder="Contact No."
-          required
-        />
-        <input
-          class="contact-input"
-          type="email"
-          name="email"
-          placeholder="Email"
-          required
-        />
-        <textarea
-          class="contact-input"
-          name="message"
-          placeholder="Type your message here"
-        ></textarea>
-        <button class="btn" type="submit">Send</button>
-      </form>
     </section>
 
     <!-- Scripts here  -->
