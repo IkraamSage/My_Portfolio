@@ -229,7 +229,7 @@
   color: rgb(3, 3, 97);
 }
 .icons i:hover {
-  color: red;
+  color: rgb(167, 11, 11);
   transition: 0.2s ease-in;
 }
 /*Projects*/
@@ -341,7 +341,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 18%;
+  padding-left: 20%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(./images/pexels-lukas-1420701.jpg);
+  background-size: cover;
 }
 
 .contact-container {
@@ -370,12 +373,11 @@
   padding: 5% 0;
 }
 .contact-input {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   font-family: "Trebuchet MS", sans-serif;
   width: 500px;
   height: 50px;
   border: 1px solid black;
-  border-radius: 50px;
 }
 .message {
   height: 100px;
@@ -401,6 +403,13 @@
 }
 #contact-form h4 {
   margin-bottom: 10%;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-right: 450px;
 }
 @media screen and (max-width: 1000px) {
   button.nav {
