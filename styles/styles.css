@@ -408,8 +408,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  padding-right: 450px;
+  padding: 10px;
+
+  font-family: "Trebuchet MS", sans-serif;
 }
 @media screen and (max-width: 1000px) {
   button.nav {
